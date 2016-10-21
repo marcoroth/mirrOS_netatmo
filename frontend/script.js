@@ -128,7 +128,6 @@ function netatmo(){
 
 					// Zusätzliches Innenmodul und Basisstation
 					if (type == "NAModule4" || type == "NAMain") {
-						console.log(el);
 						pressure = el.dashboard_data.Pressure;
 						co2 = el.dashboard_data.CO2;
 						humidity = el.dashboard_data.Humidity;
