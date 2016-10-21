@@ -1,5 +1,6 @@
 $(document).ready(function() {
-
+	
+	reload = $(".reload").val();
 	json = $.parseJSON('<?php echo getConfigValue('netatmo_config'); ?>');
 	$(".image-picker").imagepicker();
 	$(".sortable ul").sortable();
@@ -32,6 +33,9 @@ $(document).ready(function() {
 
 		$('#ok').show(30, function() {
 			$(this).hide('slow');
+			if (reload == "true") {
+				location.reload();
+			}
 		});
 	});
 });

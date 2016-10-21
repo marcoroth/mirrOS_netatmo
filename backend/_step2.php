@@ -53,7 +53,7 @@
 
   // Settings after selected station
   if ($config["id"] != "GLANCR_DEFAULT" && $config["id"] != ""){
-
+  
     echo "<h5>"._('netatmo_modules')."</h5>";
 
     // Selected Station in correct module Order
@@ -125,7 +125,10 @@
         echo "</div>";
       }
     }
-  }
+    echo "<input type='hidden' class='reload' value='false'>";
+  } else {
+    echo "<input type='hidden' class='reload' value='true'>";
+}
 ?>
 
 <a href="/modules/netatmo/assets/resetConfig.php"><?php echo _("netatmo_reset_config"); ?></a><br /><br />
