@@ -1,0 +1,123 @@
+# mirr.OS Netatmo Module v1.0
+# Copyright (C) 2016
+# Marco Roth <info@marco-roth.ch>, 2016
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mirr.OS Netatmo Module V1.0\n"
+"POT-Creation-Date: 2016-05-07 11:02+0200\n"
+"PO-Revision-Date: 2016-10-21 00:38+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.9\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Last-Translator: Marco Roth <info@marco-roth.ch>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de_DE\n"
+
+msgid "netatmo_title"
+msgstr "Netatmo"
+
+msgid "netatmo_description"
+msgstr "Anzeigen von öffentlichen oder eigenen Netatmo-Stationen"
+
+msgid "netatmo_how_to_use"
+msgstr "Um das Netatmo-Modul verwenden zu können, benötigst du eine App in deinem Netatmo-Account."
+
+msgid "netatmo_tutorial_create_app"
+msgstr "Tutorial: Netatmo-App erstellen"
+
+msgid "netatmo_already_have_app"
+msgstr "Du hast bereits eine App erstellt? Gib hier deine Daten ein:"
+
+msgid "netatmo_email"
+msgstr "Netatmo E-Mail-Adresse"
+
+msgid "netatmo_use_email"
+msgstr "mirrOS Mail Adresse verwenden?"
+
+msgid "netatmo_password"
+msgstr "Netatmo Passwort"
+
+msgid "netatmo_client_id"
+msgstr "Client ID der Netatmo-App"
+
+msgid "netatmo_client_secret"
+msgstr "Client Secret der Netatmo-App"
+
+msgid "netatmo_public_stations"
+msgstr "Meine Favoriten Stationen:"
+
+msgid "netatmo_no_public_stations"
+msgstr "Keine Stationen auf der WeatherMap als Favorit markiert"
+
+msgid "netatmo_own_stations"
+msgstr "Meine eigenen Stationen:"
+
+msgid "netatmo_no_own_stations"
+msgstr "Keine eigenen Stationen gefunden"
+
+msgid "netatmo_modules"
+msgstr "Die Reihenfolge der Module"
+
+msgid "netatmo_select_NAMain_icons"
+msgstr "Icon für die Basis-Station"
+
+msgid "netatmo_select_NAModule2_icons"
+msgstr "Icon für die Wind-Gauge"
+
+msgid "netatmo_select_NAModule3_icons"
+msgstr "Icon für die Regen-Gauge"
+
+msgid "netatmo_select_NAModule1_icons"
+msgstr "Icon für das Aussenmodul"
+
+msgid "netatmo_select_NAModule4_icons"
+msgstr "Icon für das Innenmodul"
+
+msgid "netatmo_reset_config"
+msgstr "Einstellungen zurücksetzen"
+
+msgid "netatmo_ago"
+msgstr "vor"
+
+msgid "netatmo_minute"
+msgstr "Minute"
+
+msgid "netatmo_minutes"
+msgstr "Minuten"
+
+msgid "netatmo_compass_points"
+msgstr "'N', 'NNO', 'NO', 'ONO', 'O', 'OSO', 'SO', 'SSO', 'S', 'SSW', 'SW', 'WSW', 'W', 'WNW', 'NW', 'NNW'"
+
+msgid "netatmo_tutorial_add_favorites"
+msgstr "netatmo_tutorial_add_favorites"
+
+msgid "netatmo_weather_map_info"
+msgstr "netatmo_weather_map_info"
+
+msgid "netatmo_station_not_found"
+msgstr "Fehler: Die Station mit der angegebenen MAC-Adresse wurde nicht gefunden. Stelle sicher, dass sich deine Station in den Favoriten befindet oder wähle eine andere Station aus den Einstellungen aus.<br><br>Stattdessen wurden aber folgende Stationen gefunden:<br>"
+
+msgid "netatmo_configure_in_settings"
+msgstr "Um das Netatmo-Modul nutzen zu können, musst du es in den Einstellungen konfigurieren."
+
+msgid "netatmo_NAMain"
+msgstr "Basis-Station"
+
+msgid "netatmo_NAModule1"
+msgstr "Aussenmodul"
+
+msgid "netatmo_NAModule2"
+msgstr "Wind-Gauge"
+
+msgid "netatmo_NAModule3"
+msgstr "Regen-Gauge"
+
+msgid "netatmo_NAModule4"
+msgstr "Innenmodul"
+
+msgid "save"
+msgstr "Speichern"

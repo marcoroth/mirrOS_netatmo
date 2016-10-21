@@ -1,0 +1,59 @@
+/*
+	Image Picker is a simple jQuery plugin that transforms a select element into a more user friendly graphical interface.
+	http://rvera.github.com/image-picker
+*/
+
+.image_picker_selector {
+	list-style-type: none;
+	width: 100%;
+	display: inline-block;
+	margin-left: 0px;
+}
+
+.image_picker_selector li {
+	margin: 0px 12px 0px 0px;
+	position: relative;
+	width: 55px;
+	display: inline-block;
+}
+
+.image_picker_selector li .thumbnail {
+	padding: 6px;
+	border: 5px solid #000;
+	background: #000;
+}
+
+.image_picker_selector li .thumbnail.selected {
+	border: 5px solid #7993b5;
+}
+
+.ui-sortable table {
+	height: 35px;
+	padding: 0px;
+	margin-top: -6px;
+	margin-left: -24px;
+}
+
+.ui-sortable table tr {
+	border: none;
+}
+.ui-sortable table td {
+	background: #f6f6f6;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.ui-sortable table td:nth-child(1) {
+	width: 10px !important;
+	padding-left: 20px
+}
+
+.ui-sortable table td:nth-child(2) {
+	width: 140px;
+
+}
+
+.ui-sortable table td:nth-child(3) {
+	width: 80px;
+	text-transform: capitalize;
+}

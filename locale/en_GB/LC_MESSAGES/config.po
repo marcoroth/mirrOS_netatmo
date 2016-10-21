@@ -1,0 +1,137 @@
+# mirr.OS v0.1.2.
+# Copyright (C) 2016
+# This file is distributed under the same license as the PACKAGE package.
+# mattes <ma@glancr.de>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mirr.OS Netatmo Module V1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-07 11:02+0200\n"
+"PO-Revision-Date: 2016-10-21 02:36+0200\n"
+"Last-Translator: gorbo <info@gorbo.de>\n"
+"Language-Team: \n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.8.9\n"
+
+msgid "netatmo_title"
+msgstr "Netatmo"
+
+msgid "netatmo_description"
+msgstr ""
+
+msgid "netatmo_how_to_use"
+msgstr ""
+
+msgid "netatmo_tutorial_create_app"
+msgstr ""
+
+msgid "netatmo_already_have_app"
+msgstr ""
+
+msgid "netatmo_email"
+msgstr "eMail"
+
+msgid "netatmo_use_email"
+msgstr "Use eMail-adress from mirr.OS"
+
+msgid "netatmo_password"
+msgstr "Netatmo password"
+
+msgid "netatmo_client_id"
+msgstr "Netatmo Client ID"
+
+msgid "netatmo_client_secret"
+msgstr "Netatmo Client Secret"
+
+msgid "netatmo_public_stations"
+msgstr "Public Netatmo Stations"
+
+msgid "netatmo_no_public_stations"
+msgstr ""
+"you don’t have marked a station as your favorite on the Netatmo WeatherMap"
+
+msgid "netatmo_own_stations"
+msgstr "own stations"
+
+msgid "netatmo_no_own_stations"
+msgstr "you have no own stations"
+
+msgid "netatmo_modules"
+msgstr "Configure module order"
+
+msgid "netatmo_select_NAMain_icons"
+msgstr "Select icon for base station"
+
+msgid "netatmo_select_NAModule2_icons"
+msgstr "Select icon for wind gauge"
+
+msgid "netatmo_select_NAModule3_icons"
+msgstr "Select icon for rain gauge"
+
+msgid "netatmo_select_NAModule1_icons"
+msgstr "Select icon for outdoor module"
+
+msgid "netatmo_select_NAModule4_icons"
+msgstr "Select icon for indoor module"
+
+msgid "netatmo_reset_config"
+msgstr "Reset Config"
+
+msgid "netatmo_ago"
+msgstr "ago"
+
+msgid "netatmo_minute"
+msgstr "minute"
+
+msgid "netatmo_minutes"
+msgstr "minutes"
+
+msgid "netatmo_compass_points"
+msgstr ""
+"'N', 'NNE', 'NE', 'ENE', 'E', 'ESE', 'SE', 'SSE', 'S', 'SSW', 'SW', 'WSW', "
+"'W', 'WNW', 'NW', 'NNW'"
+
+msgid "netatmo_tutorial_add_favorites"
+msgstr ""
+
+msgid "netatmo_weather_map_info"
+msgstr ""
+
+msgid "netatmo_station_not_found"
+msgstr ""
+
+msgid "netatmo_configure_in_settings"
+msgstr ""
+
+msgid "netatmo_NAMain"
+msgstr "Base-Station"
+
+msgid "netatmo_NAModule1"
+msgstr "Outdoor-Module"
+
+msgid "netatmo_NAModule2"
+msgstr "Wind-Gauge"
+
+msgid "netatmo_NAModule3"
+msgstr "Rain-Gauge"
+
+msgid "netatmo_NAModule4"
+msgstr "Indoor-Module"
+
+msgid "save"
+msgstr "save"
+
+#~ msgid "dummy_title"
+#~ msgstr "Dummy"
+
+#~ msgid "dummy_description"
+#~ msgstr "This is a dummy module."
+
+#~ msgid "dummy parameter"
+#~ msgstr "dummy parameter"

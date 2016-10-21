@@ -1,0 +1,39 @@
+#netatmo_location {
+	font-size: 10pt;
+	margin-left: 10px;
+}
+
+#netatmo_updated {
+	font-size: 10pt;
+	letter-spacing: 1px;
+}
+
+#netatmo_table td:first-of-type {
+	padding-left: 0px;
+}
+
+#netatmo_table td {
+	padding-left: 20px;
+	align: left;
+	padding-top: 0px;
+	white-space: nowrap;
+}
+
+#netatmo_table #netatmo_config {
+	white-space: normal;
+}
+
+.progress {
+	height: 15px;
+	position: relative;
+	background: black;
+	border: 1px solid white;
+}
+
+.progress span {
+  display: inline-block;
+  height: 15px;
+  background-color: white;
+  position: relative;
+	top: -4px;
+}
