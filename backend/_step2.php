@@ -137,4 +137,5 @@
 </div>
 
 <script>
-	<?php include '_step
+	<?php include '_step2.js' ?>
+</script>
