@@ -24,7 +24,6 @@ $(document).ready(function() {
 		
 		json.modules = new Array();
 
-		console.log(".sortable[base='"+json.id+"']:first li");
 		$.each($(".sortable[base='"+json.id+"']:first li"), function(index, module) {
 			json.modules.push( {id: $(module).attr("value"), type: $(module).attr("type")} );
 		});
