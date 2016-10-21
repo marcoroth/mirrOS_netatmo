@@ -9,7 +9,7 @@
 	setConfigValue("netatmo_email", "GLANCR_DEFAULT");
 	setConfigValue("netatmo_station", "GLANCR_DEFAULT");
 	setConfigValue("netatmo_new_token_requested", "false");
-	setConfigValue("netatmo_config", '{"id":"","modules":[],"icons":{},"columns":{"rain":["Rain","sum_rain_1","sum_rain_24"],"wind":["GustAngle","GustStrength","WindAngle","WindStrength"],"base":["CO2","Humidity","Noise","Temperature","Humidity","Pressure","AbsolutePressure"],"outdoor":["Humidity","Temperature","temp_trend"],"indoor":["...","...","..."]}}');
+	setConfigValue("netatmo_config", '{"id":"","modules":[],"icons":{} }');
 
 	header("location: /config/");
 

@@ -5,6 +5,12 @@
 	$client_secret = getConfigValue('netatmo_client_secret');
 	$access_token = getConfigValue('netatmo_access_token');
 	$refresh_token = getConfigValue('netatmo_refresh_token');
+	$config = getConfigValue('netatmo_config');
+	
+	
+	if ($config == "GLANCR_DEFAULT"){
+		setConfigValue("netatmo_config", '{"id":"","modules":[],"icons":{} }');
+	}
 
 	if ($client_id == "GLANCR_DEFAULT" || $client_secret == "GLANCR_DEFAULT" || $refresh_token == "GLANCR_DEFAULT" || $access_token == "GLANCR_DEFAULT") {
 
