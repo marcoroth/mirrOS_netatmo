@@ -1,7 +1,7 @@
 <link rel="stylesheet" type="text/css" href="bower_components/jquery/dist/jquery-ui.min.css">
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script type="text/javascript" src="bower_components/jquery/dist/jquery-ui.min.js"></script>
-<script src="https://raw.githubusercontent.com/rvera/image-picker/master/image-picker/image-picker.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/image-picker/0.3.0/image-picker.min.js" charset="utf-8"></script>
 
 <?php
 
@@ -53,7 +53,7 @@
 
   // Settings after selected station
   if ($config["id"] != "GLANCR_DEFAULT" && $config["id"] != ""){
-  
+
     echo "<h5>"._('netatmo_modules')."</h5>";
 
     // Selected Station in correct module Order
