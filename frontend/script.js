@@ -191,39 +191,3 @@ function netatmo(){
 		netatmo();
 	}, 20000);
 }
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////
-
-function setNetatmoValuesInInfoModule() {
-	// akt. Wetterzustand -> akt. Wetterzustand Netatmo
-	if (typeof last_hour != 'undefined') {
-		if (last_hour != 0){
-			$(".infomodule__temperature svg").remove();
-			$(".infomodule__temperature").prepend('<svg viewBox="25 25 60 60">' + svgTable[infoWeatherIcons]['10d'] + '</svg>');
-		}
-	}
-	// akt. Temp -> akt. Temp Netatmo
-	$(".infomodule__temperature span").text(outdoor_temperature + "°C");
-
-	// min. Temp -> Luftfeutigkeit aussen Netatmo
-	$(".infomodule__rainprob").text(outdoor_humidity+ "%");
-	$("#umbrella").after("<img id='humidity' style='padding-top: 10px; margin-left: 10px' src='/modules/netatmo/assets/icons/NAModule3/luftfeuchtigkeit2.svg'>");
-	$("#umbrella").remove();
-
-	// min. Temp -> Luftdruck aussen Netatmo
-	$(".infomodule__wind").text(outdoor_pressure + " mbar");
-	$("#windpath").after("<img id='pressure' style='padding-top: 3px; margin-left: 10px' height='20px' src='/modules/netatmo/assets/icons/luftdruck.png'>");
-	$("#windpath").remove();
-
-	// min. Temp -> min. Temp Netatmo
-	$(".infomodule__today--right span:first b").text(min_temperature + "°C");
-
-	// max. Temp -> max. Temp Netatmo
-	$(".infomodule__today--right span:last b").text(max_temperature + "°C");
-}
