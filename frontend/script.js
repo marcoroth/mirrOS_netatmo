@@ -162,10 +162,6 @@ function netatmo(){
 					if (modules_sorted.length == 7) {
 						$("body").append("<style> #netatmo_table { margin-top: -12px; }</style>");
 					}
-
-					if (false){
-						setNetatmoValuesInInfoModule();
-					}
 				}
 			}
 
