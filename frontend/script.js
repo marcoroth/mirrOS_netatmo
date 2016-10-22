@@ -137,7 +137,7 @@ function netatmo(){
 							battery = el.battery_percent;
 							battery_index = Math.ceil(battery/20);
 
-							$("#netatmo_table tr:last").append("<td><div class='progress'><span style='width: " + ((100/1500)*co2) + "%'></span></div></td>");
+							$("#netatmo_table tr:last").append("<td><div class='progress'><span style='width: " + ((100/1500)*co2) + "%; max-width: 100%;'></span></div></td>");
 							$("#netatmo_table tr:last").append("<td>"+temperature+"°C</td>");
 							$("#netatmo_table tr:last").append("<td>"+humidity+"%</td>");
 							$("#netatmo_table tr:last").append("<td>"+co2+" ppm</td>");
