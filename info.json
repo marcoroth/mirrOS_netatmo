@@ -1,18 +1,18 @@
 {
 	"module": {
 		"name": "Netatmo",
-		"version": "1.0.0",
+		"version": "1.0.1",
 		"description": "Modul zum Anzeigen von Wetterdaten von Netatmo-Wetterstationen",
 		"module_url": "https://glancr.de/module/home-automation/netatmo/",
 		"download_url": "https://glancr.de/module/home-automation/netatmo/netatmo.zip",
 		"category": "home-automation",
 		"release_date": "2016-10-21",
-		"last_update": "2016-10-22"
+		"last_update": "2016-10-31"
 	},
 	"creator": {
 		"name": "Marco Roth",
 		"contact": "mr@glancr.de",
 		"website": "https://www.marco-roth.ch",
-		"profile": "https://www.glancr.de/entwickler/marcoroth"
+		"profile": "https://www.glancr.de/entwickler/marco-roth"
 	}
 }
