@@ -8,17 +8,17 @@
 	$config = getConfigValue('netatmo_config');
 	
 	
-	if ($config == "GLANCR_DEFAULT"){
+	if (empty($config)){
 		setConfigValue("netatmo_config", '{"id":"","modules":[],"icons":{} }');
 	}
 
-	if ($client_id == "GLANCR_DEFAULT" || $client_secret == "GLANCR_DEFAULT" || $refresh_token == "GLANCR_DEFAULT" || $access_token == "GLANCR_DEFAULT") {
+	if (empty($client_id) || empty($client_secret) || empty($refresh_token) || empty($access_token)) {
 
-		if ($email == "GLANCR_DEFAULT") { $email = ""; }
-		if ($client_id == "GLANCR_DEFAULT") { $client_id = ""; }
-		if ($client_secret == "GLANCR_DEFAULT") { $client_secret = ""; }
-		if ($access_token == "GLANCR_DEFAULT") { $access_token = ""; }
-		if ($refresh_token == "GLANCR_DEFAULT") { $refresh_token = ""; }
+		if (empty($email)) { $email = ""; }
+		if (empty($client_id)) { $client_id = ""; }
+		if (empty($client_secret)) { $client_secret = ""; }
+		if (empty($access_token)) { $access_token = ""; }
+		if (empty($refresh_token)) { $refresh_token = ""; }
 
 		include "_step1.php";
 
