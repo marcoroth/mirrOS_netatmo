@@ -52,7 +52,7 @@
   echo "</select>";
 
   // Settings after selected station
-  if ($config["id"] != "GLANCR_DEFAULT" && $config["id"] != ""){
+  if (!empty($config["id"]) && $config["id"] != ""){
 
     echo "<h5>"._('netatmo_modules')."</h5>";
 
