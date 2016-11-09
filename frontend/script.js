@@ -185,5 +185,5 @@ function netatmo(){
 
 	window.setTimeout(function() {
 		netatmo();
-	}, 20000);
+	}, 60000);
 }
