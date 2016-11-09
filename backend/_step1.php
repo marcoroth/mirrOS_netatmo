@@ -1,7 +1,7 @@
 <p>
 	<?php echo _("netatmo_how_to_use"); ?><br /><br />
 
-	<a href="#" ><?php echo _("netatmo_tutorial_create_app"); ?></a><br /><br />
+	<a href="https://github.com/marcoroth/mirrOS_netatmo/tree/master/assets/tutorial/tutorial.md" target="_blank"><?php echo _("netatmo_tutorial_create_app"); ?></a><br /><br />
 
 	<?php echo _("netatmo_already_have_app"); ?>
 </p>
