@@ -159,6 +159,12 @@ function netatmo(){
 						}
 					});
 
+					$("#netatmo_table td").each(function(index, el) {
+						if ($(this).text().toLowerCase().indexOf("undefined") >= 0){
+							$(this).text($(this).text().replace("undefined", "- "));
+						}
+					});
+
 					if (modules_sorted.length == 7) {
 						$("body").append("<style> #netatmo_table { margin-top: -12px; }</style>");
 					}
