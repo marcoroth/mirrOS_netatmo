@@ -1,7 +1,7 @@
 {
 	"module": {
 		"name": "Netatmo",
-		"version": "1.0.1",
+		"version": "1.0.2",
 		"description": "Modul zum Anzeigen von Wetterdaten von Netatmo-Wetterstationen",
 		"module_url": "https://glancr.de/module/home-automation/netatmo/",
 		"download_url": "https://glancr.de/module/home-automation/netatmo/netatmo.zip",
