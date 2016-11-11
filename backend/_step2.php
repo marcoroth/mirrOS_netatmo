@@ -107,8 +107,11 @@
 
       foreach ($base["modules"] as $index => $module) {
 
+        $module_name = $module["module_name"];
+        if ($module_name != null) { $module_name = '"'.$module_name.'"'; } 
+
         echo "<div id='".$module["type"]."' mac='".$module["_id"]."' base='".$base_id."' class='types' ".$style.">";
-        echo '<h5>' . _('netatmo_select_'.$module["type"].'_icons') .' '.  @$module["module_name"]. '</h5>';
+        echo '<h5>' . _('netatmo_select_'.$module["type"].'_icons') .' '.$module_name.'</h5>';
         echo '<select class="image-picker '.$module["type"].'-picker" mac="'.$module["_id"].'">';
 
         $base = "/var/www/html";

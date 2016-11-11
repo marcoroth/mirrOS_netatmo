@@ -38,7 +38,6 @@ function netatmo(){
 						$("#netatmo_table").append("- " + el["station_name"]+"  (" + el["_id"] + ")<br>");
 					});
 				} else {
-					//$.post('setConfigValueAjax.php', {'key': 'netatmo_new_token_requested', 'value': 'false'});
 					unix_last_update = base.dashboard_data.time_utc;
 					unix_actual = Math.floor(Date.now() / 1000);
 					unix_diff = unix_actual-unix_last_update;
@@ -49,13 +48,13 @@ function netatmo(){
 					// adding base station to the modules array
 					modules.push(base);
 					minutes_ago = Math.ceil(unix_diff/60);
-					language = "<?php echo _('language'); ?>";
+					language = "<?php echo getConfigValue('language'); ?>";
 					ago = "<?php echo _('netatmo_ago'); ?>";
 
 					if (minutes_ago == 1) {	minutes = "<?php echo _('netatmo_minute'); ?>"; }
 					else { minutes = "<?php echo _('netatmo_minutes'); ?>"; }
 
-					if ( language == "de_DE" || language == "language") {minutes_ago_language = ago + " " + minutes_ago + " " + minutes; }
+					if ( language == "de_DE") {minutes_ago_language = ago + " " + minutes_ago + " " + minutes; }
 					else { minutes_ago_language =  minutes_ago + " " + minutes + " " + ago; }
 
 					$("#netatmo_location").text(station_name + " - " + minutes_ago_language);
@@ -114,7 +113,7 @@ function netatmo(){
 							$("#netatmo_table tr:last").append("<td>" + wind_strength + " km/h</td>");
 							$("#netatmo_table tr:last").append("<td>" + gust_strength + " km/h</td>");
 							$("#netatmo_table tr:last").append("<td>" + angle + "</td>");
-							$("#netatmo_table tr:last").append("<td colspan='2'>" +" aus "+ compass_point + " " + wind_angle + "°</td>");
+							$("#netatmo_table tr:last").append("<td colspan='2'>" + compass_point + " " + wind_angle + "°</td>");
 						}
 
 						// Regenmodul
