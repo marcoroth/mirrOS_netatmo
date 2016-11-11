@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: mirr.OS Netatmo Module V1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-07 11:02+0200\n"
-"PO-Revision-Date: 2016-10-21 02:36+0200\n"
+"PO-Revision-Date: 2016-11-11 01:39+0100\n"
 "Last-Translator: gorbo <info@gorbo.de>\n"
 "Language-Team: \n"
 "Language: en_GB\n"
@@ -23,16 +23,16 @@ msgid "netatmo_title"
 msgstr "Netatmo"
 
 msgid "netatmo_description"
-msgstr ""
+msgstr "Module for displaying weather data from Netatmo weather stations"
 
 msgid "netatmo_how_to_use"
-msgstr ""
+msgstr "To use the Netatmo module, you need an app in your Netatmo account."
 
 msgid "netatmo_tutorial_create_app"
-msgstr ""
+msgstr "Tutorial: How to create a Netatmo-App (German only)"
 
 msgid "netatmo_already_have_app"
-msgstr ""
+msgstr "Do you already have an app? Please insert your data here:"
 
 msgid "netatmo_email"
 msgstr "eMail"
@@ -98,16 +98,19 @@ msgstr ""
 "'W', 'WNW', 'NW', 'NNW'"
 
 msgid "netatmo_tutorial_add_favorites"
-msgstr ""
+msgstr "netatmo_tutorial_add_favorites"
 
 msgid "netatmo_weather_map_info"
-msgstr ""
+msgstr "netatmo_weather_map_info"
 
 msgid "netatmo_station_not_found"
 msgstr ""
+"Error: The station with the specified MAC address was not found. Make sure "
+"your station is in the favorites or select another station in the settings "
+"section. <br> <br> However, the following stations were found:<br>"
 
 msgid "netatmo_configure_in_settings"
-msgstr ""
+msgstr "To use the Netatmo module, you must configure it in the settings."
 
 msgid "netatmo_NAMain"
 msgstr "Base-Station"
