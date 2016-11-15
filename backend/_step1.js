@@ -43,7 +43,7 @@ $(document).ready(function() {
 		if (email_checked == true){
 			email_checked = false;
 			$("#email").val("");
-			$("#email").attr("placeholder", "<?php echo _('netatmo_password');?>");
+			$("#email").attr("placeholder", "<?php echo _('netatmo_email');?>");
 		} else if (email_checked == false) {
 			email_checked = true;
 			$("#email").attr("placeholder", "");
