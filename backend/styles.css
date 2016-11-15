@@ -57,3 +57,18 @@
 	width: 80px;
 	text-transform: capitalize;
 }
+
+
+#gr-modal-netatmo ul.sortable {
+	list-style-type: none !important;
+	margin-left: 0px !important;
+}
+
+#gr-modal-netatmo li.ui-sortable-handle {
+	margin-bottom: 0.5rem !important;
+}
+
+#gr-modal-netatmo span.ui-icon {
+	float: left !important;
+	margin-top: 0.2rem !important;
+}
