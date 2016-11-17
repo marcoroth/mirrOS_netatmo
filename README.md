@@ -6,8 +6,8 @@ Das Netatmo-Modul integriert die Informationen einer Netatmo Wetterstation ins g
 ## Voraussetzungen
 
 * Netatmo-Account
-* Netatmo Client ID ([zum Tutorial](https://github.com/marcoroth/mirrOS_netatmo/wiki/Tutorial:-Netatmo-Modul-einrichten))
-* Netatmo Client Secret ([zum Tutorial](https://github.com/marcoroth/mirrOS_netatmo/wiki/Tutorial:-Netatmo-Modul-einrichten))
+* Netatmo Client ID ([zum Tutorial](https://github.com/marcoroth/mirrOS_netatmo/blob/master/assets/tutorial/tutorial.md))
+* Netatmo Client Secret ([zum Tutorial](https://github.com/marcoroth/mirrOS_netatmo/blob/master/assets/tutorial/tutorial.md))
 * Raspberry mit installiertem [mirrOS](https://glancr.de/mirr-os/)
 
 
