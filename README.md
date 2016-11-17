@@ -19,7 +19,7 @@ Die Modul-Updates werden direkt via mirrOS-Backend installiert.
 
 ## Das Modul in Aktion
 
-![Preview](https://glancr.de/wp-content/uploads/modulpreviews_netatmo.png)
+![Preview]()
 
 ## Weitere Informationen
 * [Netatmo-Modul](https://glancr.de/module/home-automation/netatmo/)
