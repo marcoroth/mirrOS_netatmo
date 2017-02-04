@@ -10,6 +10,7 @@
 	setConfigValue("netatmo_station", "");
 	setConfigValue("netatmo_new_token_requested", "false");
 	setConfigValue("netatmo_config", '{"id":"","modules":[],"icons":{} }');
+	setConfigValue("reload", "1");
 
 	header("location: /config/");
 
