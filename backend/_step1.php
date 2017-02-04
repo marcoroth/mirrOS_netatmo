@@ -19,7 +19,7 @@
 <h5><?php echo _('netatmo_client_secret');?></h5>
 <input type="text" id="client_secret" placeholder="<?php echo _('netatmo_client_secret');?>" value="<?php echo $client_secret; ?>"/>
 
-<a href="/modules/netatmo/assets/resetConfig.php"><?php echo _("netatmo_reset_config"); ?></a><br /><br />
+<a href="/modules/netatmo/assets/reset.php"><?php echo _("netatmo_reset_config"); ?></a><br /><br />
 
 
 <div class="block__add" id="netatmo_save_step1">

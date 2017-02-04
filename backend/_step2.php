@@ -108,7 +108,7 @@
       foreach ($base["modules"] as $index => $module) {
 
         $module_name = $module["module_name"];
-        if ($module_name != null) { $module_name = '"'.$module_name.'"'; } 
+        if ($module_name != null) { $module_name = '"'.$module_name.'"'; }
 
         echo "<div id='".$module["type"]."' mac='".$module["_id"]."' base='".$base_id."' class='types' ".$style.">";
         echo '<h5>' . _('netatmo_select_'.$module["type"].'_icons') .' '.$module_name.'</h5>';
@@ -134,7 +134,7 @@
 }
 ?>
 
-<a href="/modules/netatmo/assets/resetConfig.php"><?php echo _("netatmo_reset_config"); ?></a><br /><br />
+<a href="/modules/netatmo/assets/reset.php"><?php echo _("netatmo_reset_config"); ?></a><br /><br />
 
 <div class="block__add" id="netatmo_save_step2">
 	<button class="netatmo_save_step2--button" href="#">
