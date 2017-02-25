@@ -184,7 +184,7 @@ function netatmo(){
 			location.reload();
 		} else {
 			$("#netatmo_table").empty();
-			$("#netatmo_table").append("Fehler: Es scheint, dass einige Einstellungen nicht korrekt sind. Bitte überprüfe deine Einstellungen.");
+			$("#netatmo_table").append("<?php echo _('netatmo_check_config'); ?>");
 		}
 	});
 

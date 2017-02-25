@@ -1,6 +1,7 @@
 #netatmo_location {
 	font-size: 10pt;
 	margin-left: 10px;
+	line-height: 10px;
 }
 
 #netatmo_updated {
@@ -15,7 +16,6 @@
 #netatmo_table td {
 	padding-left: 20px;
 	align: left;
-	padding-top: 0px;
 	white-space: nowrap;
 }
 
@@ -23,14 +23,14 @@
 	white-space: normal;
 }
 
-.progress {
+#netatmo_table .progress {
 	height: 15px;
 	position: relative;
 	background: black;
 	border: 1px solid white;
 }
 
-.progress span {
+#netatmo_table .progress span {
   display: inline-block;
   height: 15px;
   background-color: white;

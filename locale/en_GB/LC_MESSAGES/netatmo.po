@@ -1,23 +1,21 @@
-# mirr.OS v0.1.2.
-# Copyright (C) 2016
-# This file is distributed under the same license as the PACKAGE package.
-# mattes <ma@glancr.de>, 2016.
+# mirr.OS Netatmo Module v1.1.4
+# Copyright (C) 2017
+# Marco Roth <mr@glancr.de>, 2017
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: mirr.OS Netatmo Module V1.0\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: mirr.OS Netatmo Module V1.1.4\n"
 "POT-Creation-Date: 2016-05-07 11:02+0200\n"
-"PO-Revision-Date: 2016-11-11 01:39+0100\n"
-"Last-Translator: gorbo <info@gorbo.de>\n"
+"PO-Revision-Date: 2017-02-25 22:12+0100\n"
+"Last-Translator: Marco Roth <mr@glancr.de>\n"
 "Language-Team: \n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.8.12\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.9\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "netatmo_title"
 msgstr "Netatmo"
@@ -53,8 +51,7 @@ msgid "netatmo_public_stations"
 msgstr "Public Netatmo Stations"
 
 msgid "netatmo_no_public_stations"
-msgstr ""
-"you don’t have marked a station as your favorite on the Netatmo WeatherMap"
+msgstr "you don’t have marked a station as your favorite on the Netatmo WeatherMap"
 
 msgid "netatmo_own_stations"
 msgstr "own stations"
@@ -93,9 +90,7 @@ msgid "netatmo_minutes"
 msgstr "minutes"
 
 msgid "netatmo_compass_points"
-msgstr ""
-"'N', 'NNE', 'NE', 'ENE', 'E', 'ESE', 'SE', 'SSE', 'S', 'SSW', 'SW', 'WSW', "
-"'W', 'WNW', 'NW', 'NNW'"
+msgstr "'N', 'NNE', 'NE', 'ENE', 'E', 'ESE', 'SE', 'SSE', 'S', 'SSW', 'SW', 'WSW', 'W', 'WNW', 'NW', 'NNW'"
 
 msgid "netatmo_tutorial_add_favorites"
 msgstr "netatmo_tutorial_add_favorites"
@@ -105,9 +100,8 @@ msgstr "netatmo_weather_map_info"
 
 msgid "netatmo_station_not_found"
 msgstr ""
-"Error: The station with the specified MAC address was not found. Make sure "
-"your station is in the favorites or select another station in the settings "
-"section. <br> <br> However, the following stations were found:<br>"
+"Error: The station with the specified MAC address was not found. Make sure your station is in the favorites or "
+"select another station in the settings section. <br> <br> However, the following stations were found:<br>"
 
 msgid "netatmo_configure_in_settings"
 msgstr "To use the Netatmo module, you must configure it in the settings."
@@ -127,14 +121,11 @@ msgstr "Rain-Gauge"
 msgid "netatmo_NAModule4"
 msgstr "Indoor-Module"
 
+msgid "netatmo_reset_config_message"
+msgstr "Are you sure you want to reset your Netatmo config?"
+
+msgid "netatmo_check_config"
+msgstr "Error: It look likes some settings are incorrect. Please double check your configurations in the backend."
+
 msgid "save"
 msgstr "save"
-
-#~ msgid "dummy_title"
-#~ msgstr "Dummy"
-
-#~ msgid "dummy_description"
-#~ msgstr "This is a dummy module."
-
-#~ msgid "dummy parameter"
-#~ msgstr "dummy parameter"

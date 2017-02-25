@@ -1,19 +1,19 @@
-# mirr.OS Netatmo Module v1.0
-# Copyright (C) 2016
-# Marco Roth <info@marco-roth.ch>, 2016
+# mirr.OS Netatmo Module v1.1.4
+# Copyright (C) 2017
+# Marco Roth <mr@glancr.de>, 2017
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: mirr.OS Netatmo Module V1.0\n"
+"Project-Id-Version: mirr.OS Netatmo Module V1.1.4\n"
 "POT-Creation-Date: 2016-05-07 11:02+0200\n"
-"PO-Revision-Date: 2016-11-10 17:22+0100\n"
+"PO-Revision-Date: 2017-02-25 22:12+0100\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 1.8.12\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"Last-Translator: Marco Roth <info@marco-roth.ch>\n"
+"Last-Translator: Marco Roth <mr@glancr.de>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Language: de_DE\n"
 
@@ -118,6 +118,12 @@ msgstr "Regen-Gauge"
 
 msgid "netatmo_NAModule4"
 msgstr "Innenmodul"
+
+msgid "netatmo_reset_config_message"
+msgstr "Bist du sicher, dass du deine Netatmo Einstellugnen zurücksetzten möchtest?"
+
+msgid "netatmo_check_config"
+msgstr "Fehler: Es scheint, dass einige Einstellungen nicht korrekt sind. Bitte überprüfe deine Einstellungen."
 
 msgid "save"
 msgstr "Speichern"
