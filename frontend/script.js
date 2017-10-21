@@ -118,8 +118,8 @@ function netatmo(){
 
 						// Regenmodul
 						if (type == "NAModule3") {
-							last_hour = el.dashboard_data.sum_rain_1;
-							today = el.dashboard_data.sum_rain_24;
+							last_hour = el.dashboard_data.sum_rain_1.toFixed(3);
+							today = el.dashboard_data.sum_rain_24.toFixed(3);
 							battery = el.battery_percent;
 							battery_index = Math.ceil(battery/20);
 							$("#netatmo_table tr:last").append("<td>"+last_hour+" mm</td>");
