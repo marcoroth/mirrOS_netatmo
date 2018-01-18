@@ -1,0 +1,147 @@
+# mirr.OS Netatmo Module v1.1.4
+# Copyright (C) 2017
+# Marco Roth <mr@glancr.de>, 2017
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mirr.OS Netatmo Module V1.1.4\n"
+"POT-Creation-Date: 2016-05-07 11:02+0200\n"
+"PO-Revision-Date: 2018-01-18 18:48+0100\n"
+"Last-Translator: Tobias Grasse <tg@glancr.de>\n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "netatmo_title"
+msgstr "Netatmo"
+
+msgid "netatmo_description"
+msgstr "Netatmoから気象データを表示するためのモジュール"
+
+msgid "netatmo_how_to_use"
+msgstr ""
+"Netatmoモジュールを使用するには、アプリにNetatmoアカウント"
+"が必要です。"
+
+msgid "netatmo_tutorial_create_app"
+msgstr ""
+"チュートリアル：Netatmo-Appの作成方法（ドイツ語のみ）"
+
+msgid "netatmo_already_have_app"
+msgstr ""
+"すでにアプリを持っていますか？あなたのデータをここに入力し"
+"てください："
+
+msgid "netatmo_email"
+msgstr "メールアドレス"
+
+msgid "netatmo_use_email"
+msgstr "mirr.OSのメールアドレスを使用する"
+
+msgid "netatmo_password"
+msgstr "Netatmo パスワード"
+
+msgid "netatmo_client_id"
+msgstr "Netatmo ID"
+
+msgid "netatmo_client_secret"
+msgstr "Netatmo クライアントシークレット"
+
+msgid "netatmo_public_stations"
+msgstr "公共のNetatmoステーション"
+
+msgid "netatmo_no_public_stations"
+msgstr ""
+"Netatmo WeatherMapでお気に入りのステーションがありません"
+
+msgid "netatmo_own_stations"
+msgstr "個人のステーション"
+
+msgid "netatmo_no_own_stations"
+msgstr "個人のステーションがありません"
+
+msgid "netatmo_modules"
+msgstr "モジュールの順序を設定する"
+
+msgid "netatmo_select_NAMain_icons"
+msgstr "ベースステーションのアイコンを選択"
+
+msgid "netatmo_select_NAModule2_icons"
+msgstr "風量計のアイコンを選択"
+
+msgid "netatmo_select_NAModule3_icons"
+msgstr "雨量計のアイコンを選択"
+
+msgid "netatmo_select_NAModule1_icons"
+msgstr "屋外モジュールのアイコンを選択"
+
+msgid "netatmo_select_NAModule4_icons"
+msgstr "屋内モジュールのアイコンを選択"
+
+msgid "netatmo_reset_config"
+msgstr "リセット設定"
+
+msgid "netatmo_ago"
+msgstr "前"
+
+msgid "netatmo_minute"
+msgstr "分"
+
+msgid "netatmo_minutes"
+msgstr "分"
+
+msgid "netatmo_compass_points"
+msgstr ""
+"'北', '北北東', '北東', '東北東', '東', '東南東', '南東', "
+"'南南東', '南', '北北西', '南西', '西南西', '西', '西北"
+"西', '北西', '北北西'"
+
+msgid "netatmo_tutorial_add_favorites"
+msgstr "Netatmoチュートリアルをお気に入りに加える"
+
+msgid "netatmo_weather_map_info"
+msgstr "Netatmo 天気図情報"
+
+msgid "netatmo_station_not_found"
+msgstr ""
+"エラー：指定されたMACアドレスを持つステーションが見つかり"
+"ませんでした。ステーションがお気に入りになっていることを確"
+"認するか、設定セクションで別のステーションを選択してくださ"
+"い。 <br> <br>しかし、以下のステーションが見つかりました："
+"<br>"
+
+msgid "netatmo_configure_in_settings"
+msgstr ""
+"Netatmoモジュールを使用するには、設定でNetatmoモジュールを"
+"設定する必要があります。"
+
+msgid "netatmo_NAMain"
+msgstr "基地局"
+
+msgid "netatmo_NAModule1"
+msgstr "屋外モジュール"
+
+msgid "netatmo_NAModule2"
+msgstr "風力計"
+
+msgid "netatmo_NAModule3"
+msgstr "雨量計"
+
+msgid "netatmo_NAModule4"
+msgstr "屋内モジュール"
+
+msgid "netatmo_reset_config_message"
+msgstr "Netatmoの設定をリセットしてもよろしいですか？"
+
+msgid "netatmo_check_config"
+msgstr ""
+"エラー：いくつかの設定が間違っています。バックエンドで設定"
+"を再確認してください。"
+
+msgid "save"
+msgstr "保存"
