@@ -79,16 +79,19 @@ function netatmo(){
 
 						// Aussenmodul
 						if (type == "NAModule1") {
-							outdoor_pressure = base.dashboard_data.Pressure;
-							outdoor_temperature = el.dashboard_data.Temperature;
-							outdoor_humidity = el.dashboard_data.Humidity;
-							temp_trend = el.dashboard_data.temp_trend;
+
 							temp_trend_icons = ["↑", "↓", "↔"];
-							co2 = el.dashboard_data.CO2;
-							battery = el.battery_percent;
+
+							try { outdoor_pressure = base.dashboard_data.Pressure; } catch (e) { outdoor_pressure = "?"; }
+							try { outdoor_temperature = el.dashboard_data.Temperature; } catch (e) { outdoor_temperature = "?"; }
+							try { outdoor_humidity = el.dashboard_data.Humidity; } catch (e) { outdoor_humidity = "?"; }
+							try { temp_trend = el.dashboard_data.temp_trend; } catch (e) { temp_trend = "?"; }
+							try { co2 = el.dashboard_data.CO2; } catch (e) { co2 = "?"; }
+							try { min_temperature = el.dashboard_data.min_temp; } catch (e) { min_temperature = "?"; }
+							try { max_temperature = el.dashboard_data.max_temp; } catch (e) { max_temperature = "?"; }
+							try { battery = el.battery_percent; } catch (e) { battery = 1; }
+
 							battery_index = Math.ceil(battery/20);
-							min_temperature = el.dashboard_data.min_temp;
-							max_temperature = el.dashboard_data.max_temp;
 
 							if (temp_trend == "up") {	temp_trend = 0; } else
 							if (temp_trend == "down") { temp_trend = 1; } else
@@ -102,11 +105,11 @@ function netatmo(){
 
 						// Windmodul
 						if (type == "NAModule2") {
-							wind_strength = el.dashboard_data.WindStrength;
-							wind_angle = Math.abs(el.dashboard_data.WindAngle);
-							compass_point = compass_points[Math.ceil(wind_angle/22.5)-1];
-							gust_strength = el.dashboard_data.GustStrength;
-							battery = el.battery_percent;
+							try { wind_strength = el.dashboard_data.WindStrength; } catch (e) { wind_strength = "?"; }
+							try { wind_angle = Math.abs(el.dashboard_data.WindAngle); } catch (e) { wind_angle = "?"; }
+							try { compass_point = compass_points[Math.ceil(wind_angle/22.5)-1]; } catch (e) { compass_point = "?"; }
+							try { gust_strength = el.dashboard_data.GustStrength; } catch (e) { gust_strength = "?"; }
+							try { battery = el.battery_percent; } catch (e) { battery = 1; }
 							battery_index = Math.ceil(battery/20);
 
 							angle = '<div style="height: 30px;"><svg id="windpath1" version="1.1" viewBox="0 0 28.35 28.35"><path d="M5.394,14.763c0,0.244,0.152,0.466,0.38,0.552l14.713,5.593c0.064,0.025,0.134,0.038,0.204,0.038	c0.19,0,0.376-0.094,0.483-0.244c0.152-0.21,0.144-0.518-0.02-0.717l-4.257-5.222l0.051-0.063l4.204-5.157c0.164-0.199,0.174-0.507,0.021-0.716c-0.11-0.153-0.289-0.245-0.478-0.245c-0.071,0-0.143,0.013-0.21,0.039L5.772,14.214C5.545,14.298,5.394,14.519,5.394,14.763z M7.704,14.74l11.146-4.236l-0.059,0.072l-3.11,3.816c-0.173,0.208-0.173,0.535-0.001,0.744l3.169,3.887l-0.087-0.033l-1.92-0.728l-9.199-3.499L7.704,14.74z" transform="rotate(' + (wind_angle+90-180) + ', 14.175, 14.175)"></path></svg></span>'
@@ -119,15 +122,9 @@ function netatmo(){
 						// Regenmodul
 						if (type == "NAModule3") {
 
-							try {
-								last_hour = el.dashboard_data.sum_rain_1.toFixed(3);
-								today = el.dashboard_data.sum_rain_24.toFixed(3);
-								battery = el.battery_percent;
-							} catch (e) {
-								last_hour = "?";
-								today = "?";
-								battery = 1;
-							}
+							try { last_hour = el.dashboard_data.sum_rain_1.toFixed(3); } catch (e) { last_hour = "?"; }
+							try { today = el.dashboard_data.sum_rain_24.toFixed(3); } catch (e) { today = "?"; }
+							try { battery = el.battery_percent; } catch (e) { battery = 1; }
 
 							battery_index = Math.ceil(battery/20);
 
@@ -137,12 +134,13 @@ function netatmo(){
 
 						// Zusätzliches Innenmodul und Basisstation
 						if (type == "NAModule4" || type == "NAMain") {
-							pressure = el.dashboard_data.Pressure;
-							co2 = el.dashboard_data.CO2;
-							humidity = el.dashboard_data.Humidity;
-							temperature = el.dashboard_data.Temperature;
-							noise = el.dashboard_data.Noise;
-							battery = el.battery_percent;
+
+							try { pressure = el.dashboard_data.Pressure; } catch (e) { pressure = "?"; }
+							try { co2 = el.dashboard_data.CO2; } catch (e) { co2 = "?"; }
+							try { humidity = el.dashboard_data.Humidity; } catch (e) { humidity = "?"; }
+							try { temperature = el.dashboard_data.Temperature; } catch (e) { temperature = "?"; }
+							try { noise = el.dashboard_data.Noise; } catch (e) { noise = "?"; }
+							try { battery = el.battery_percent; } catch (e) { battery = 1; }
 							battery_index = Math.ceil(battery/20);
 
 							$("#netatmo_table tr:last").append("<td><div class='progress'><span style='width: " + ((100/1500) * co2) + "%; max-width: 100%;'></span></div></td>");
