@@ -123,13 +123,13 @@ function netatmo(){
 								last_hour = el.dashboard_data.sum_rain_1.toFixed(3);
 								today = el.dashboard_data.sum_rain_24.toFixed(3);
 								battery = el.battery_percent;
-								battery_index = Math.ceil(battery/20);
 							} catch (e) {
 								last_hour = "?";
 								today = "?";
 								battery = 1;
-								battery_index = Math.ceil(battery/20);
 							}
+
+							battery_index = Math.ceil(battery/20);
 
 							$("#netatmo_table tr:last").append("<td>" + last_hour + " mm</td>");
 							$("#netatmo_table tr:last").append("<td colspan='4'>" + today + " mm</td>");
