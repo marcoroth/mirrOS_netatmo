@@ -109,7 +109,7 @@ function netatmo(){
 							battery = el.battery_percent;
 							battery_index = Math.ceil(battery/20);
 
-							angle = '<div style="height: 30px;"><svg id="windpath1" version="1.1" viewBox="0 0 28.35 28.35"><path d="M5.394,14.763c0,0.244,0.152,0.466,0.38,0.552l14.713,5.593c0.064,0.025,0.134,0.038,0.204,0.038	c0.19,0,0.376-0.094,0.483-0.244c0.152-0.21,0.144-0.518-0.02-0.717l-4.257-5.222l0.051-0.063l4.204-5.157c0.164-0.199,0.174-0.507,0.021-0.716c-0.11-0.153-0.289-0.245-0.478-0.245c-0.071,0-0.143,0.013-0.21,0.039L5.772,14.214C5.545,14.298,5.394,14.519,5.394,14.763z M7.704,14.74l11.146-4.236l-0.059,0.072l-3.11,3.816c-0.173,0.208-0.173,0.535-0.001,0.744l3.169,3.887l-0.087-0.033l-1.92-0.728l-9.199-3.499L7.704,14.74z" transform="rotate('+(wind_angle+90-180)+', 14.175, 14.175)"></path></svg></span>'
+							angle = '<div style="height: 30px;"><svg id="windpath1" version="1.1" viewBox="0 0 28.35 28.35"><path d="M5.394,14.763c0,0.244,0.152,0.466,0.38,0.552l14.713,5.593c0.064,0.025,0.134,0.038,0.204,0.038	c0.19,0,0.376-0.094,0.483-0.244c0.152-0.21,0.144-0.518-0.02-0.717l-4.257-5.222l0.051-0.063l4.204-5.157c0.164-0.199,0.174-0.507,0.021-0.716c-0.11-0.153-0.289-0.245-0.478-0.245c-0.071,0-0.143,0.013-0.21,0.039L5.772,14.214C5.545,14.298,5.394,14.519,5.394,14.763z M7.704,14.74l11.146-4.236l-0.059,0.072l-3.11,3.816c-0.173,0.208-0.173,0.535-0.001,0.744l3.169,3.887l-0.087-0.033l-1.92-0.728l-9.199-3.499L7.704,14.74z" transform="rotate(' + (wind_angle+90-180) + ', 14.175, 14.175)"></path></svg></span>'
 							$("#netatmo_table tr:last").append("<td>" + wind_strength + " km/h</td>");
 							$("#netatmo_table tr:last").append("<td>" + gust_strength + " km/h</td>");
 							$("#netatmo_table tr:last").append("<td>" + angle + "</td>");
@@ -118,12 +118,21 @@ function netatmo(){
 
 						// Regenmodul
 						if (type == "NAModule3") {
-							last_hour = el.dashboard_data.sum_rain_1.toFixed(3);
-							today = el.dashboard_data.sum_rain_24.toFixed(3);
-							battery = el.battery_percent;
-							battery_index = Math.ceil(battery/20);
-							$("#netatmo_table tr:last").append("<td>"+last_hour+" mm</td>");
-							$("#netatmo_table tr:last").append("<td colspan='4'>"+today+" mm</td>");
+
+							try {
+								last_hour = el.dashboard_data.sum_rain_1.toFixed(3);
+								today = el.dashboard_data.sum_rain_24.toFixed(3);
+								battery = el.battery_percent;
+								battery_index = Math.ceil(battery/20);
+							} catch (e) {
+								last_hour = "?";
+								today = "?";
+								battery = 1;
+								battery_index = Math.ceil(battery/20);
+							}
+
+							$("#netatmo_table tr:last").append("<td>" + last_hour + " mm</td>");
+							$("#netatmo_table tr:last").append("<td colspan='4'>" + today + " mm</td>");
 						}
 
 						// Zusätzliches Innenmodul und Basisstation
@@ -136,16 +145,16 @@ function netatmo(){
 							battery = el.battery_percent;
 							battery_index = Math.ceil(battery/20);
 
-							$("#netatmo_table tr:last").append("<td><div class='progress'><span style='width: " + ((100/1500)*co2) + "%; max-width: 100%;'></span></div></td>");
-							$("#netatmo_table tr:last").append("<td>"+temperature+"°C</td>");
-							$("#netatmo_table tr:last").append("<td>"+humidity+"%</td>");
-							$("#netatmo_table tr:last").append("<td>"+co2+" ppm</td>");
+							$("#netatmo_table tr:last").append("<td><div class='progress'><span style='width: " + ((100/1500) * co2) + "%; max-width: 100%;'></span></div></td>");
+							$("#netatmo_table tr:last").append("<td>" + temperature + "°C</td>");
+							$("#netatmo_table tr:last").append("<td>" + humidity + "%</td>");
+							$("#netatmo_table tr:last").append("<td>" + co2 + " ppm</td>");
 
 							if (type == "NAModule4") {
 								$("#netatmo_table tr:last").append("<td></td>");
 							} else {
 								battery_index = 0;
-								$("#netatmo_table tr:last").append("<td>"+noise+" dB</td>");
+								$("#netatmo_table tr:last").append("<td>" + noise + " dB</td>");
 							}
 						}
 
