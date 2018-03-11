@@ -20,22 +20,11 @@
 	<title><?php echo _('module overview');?></title>
 	<link rel="stylesheet" type="text/css" href="/config/css/main.css">
 	<link rel="stylesheet" href="/config/bower_components/foundation-icon-fonts/foundation-icons.css" media="screen" title="no title" charset="utf-8">
+	<script type="text/javascript" src="/config/bower_components/jquery/dist/jquery.min.js"></script>
 </head>
 
 <body>
-	<header class="expanded row">
-		<div class="small-12 columns site__title">
-			<div class="row">
-				<a href="/config">
-					<i class="fi-home"></i>
-				</a>
-				<img src="/config/assets/glancr_logo.png" width="57" height="30" alt="GLANCR Logo" srcset="/config/assets/glancr_logo.png 57w, /config/assets/glancr_logo@2x.png 114w, /config/assets/glancr_logo@2x.png 171w">
-				<a href="/wlanconfig/">
-					<i class="fi-widget"></i>
-				</a>
-			</div>
-		</div>
-	</header>
+	<?php include "../../../includes/navigation.php"; ?>
 
 	<main class="container">
 		<section>
