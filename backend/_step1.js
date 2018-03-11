@@ -31,7 +31,9 @@ $(document).ready(function() {
 			}
 		}).error(function(data) {
 			$(".error").val(data.status + " - " + data.statusText + ": " + data.responseText);
-			$(".error").show();
+			$('#error').show(30, function() {
+				$(this).hide('slow');
+			});
 		});
 	});
 
